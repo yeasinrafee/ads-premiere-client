@@ -138,7 +138,7 @@ export function Footer() {
             variant='outline'
             className='rounded-full'
           >
-            <ArrowUp className='h-4 w-4' />
+            <ArrowUp className='h-4 w-4 text-[#FB9618]' />
             <span className='sr-only'>Back to top</span>
           </Button>
         </div>

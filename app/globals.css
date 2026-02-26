@@ -80,3 +80,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* This creates a 'buffer' so the sticky header doesn't cover your section headings */
+[id] {
+  scroll-margin-top: 80px;
+}

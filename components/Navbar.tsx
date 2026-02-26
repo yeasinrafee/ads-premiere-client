@@ -47,7 +47,7 @@ export function Navbar() {
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 lg:px-8',
         scrolled || isOpen
           ? 'bg-background/95 backdrop-blur shadow-md py-6'
-          : 'py-6'
+          : 'py-6',
       )}
     >
       <div className='max-w-7xl mx-auto flex items-center justify-between'>
@@ -55,10 +55,10 @@ export function Navbar() {
           <div>
             <Image src={logo} alt='logo' height={60} />
           </div>
-          <div className='font-bold text-2xl'>
+          {/* <div className='font-bold text-2xl'>
             <span className='text-[#FB9618]'>ADS </span>
             <span className='text-[#07A2FF]'>PREMIERE</span>
-          </div>
+          </div> */}
         </Link>
 
         {/* Desktop Menu */}

@@ -29,10 +29,10 @@ export function Footer() {
               <Image src={logo} alt='logo' height={60} />
             </div>
             <Link href='#home' className='flex items-center space-x-2 mb-4'>
-              <div className='font-bold text-2xl'>
+              {/* <div className='font-bold text-2xl'>
                 <span className='text-[#FB9618]'>ADS </span>
                 <span className='text-[#07A2FF]'>PREMIERE</span>
-              </div>
+              </div> */}
             </Link>
             <p className='text-muted-foreground max-w-xs'>
               We help brands increase visibility, generate leads, and drive

@@ -145,7 +145,7 @@ const translations: Record<Language, Record<TranslationKey, string>> = {
     'contact.formMessage': 'Message',
     'contact.formSubmit': 'Send Message',
 
-    'footer.copyright': '© 2025 Ads Premier. All Rights Reserved.',
+    'footer.copyright': '© 2026 Ads Premier. All Rights Reserved.',
   },
   bn: {
     'nav.home': 'হোম',
@@ -228,7 +228,7 @@ const translations: Record<Language, Record<TranslationKey, string>> = {
     'contact.formSubmit': 'বার্তা পাঠান',
 
     'footer.copyright':
-      '© ২০২৫ ডিজিটাল মার্কেটিং এজেন্সি। সর্বস্বত্ব সংরক্ষিত।',
+      '© ২০২৬ ডিজিটাল মার্কেটিং এজেন্সি। সর্বস্বত্ত সংরক্ষিত।',
   },
 };
 

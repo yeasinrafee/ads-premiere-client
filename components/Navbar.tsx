@@ -19,9 +19,10 @@ export function Navbar() {
   const navItems = [
     { href: '#home', name: t('nav.home') },
     { href: '#services', name: t('nav.services') },
-    { href: '#process', name: t('nav.process') },
+    // { href: '#process', name: t('nav.process') },
+    { href: '#pricing', name: t('nav.pricing') },
     { href: '#portfolio', name: t('nav.portfolio') },
-    { href: '#testimonials', name: t('nav.testimonials') },
+    // { href: '#testimonials', name: t('nav.testimonials') },
     { href: '#contact', name: t('nav.contact') },
   ];
 

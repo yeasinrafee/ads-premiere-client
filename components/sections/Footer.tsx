@@ -71,7 +71,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className='font-semibold text-lg mb-4'>Quick Links</h3>
+            <h3 className='font-semibold text-lg mb-4 text-[#07A2FF]'>
+              Quick Links
+            </h3>
             <ul className='space-y-2'>
               {[
                 { name: t('nav.home'), href: '#home' },
@@ -94,7 +96,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className='font-semibold text-lg mb-4'>Services</h3>
+            <h3 className='font-semibold text-lg mb-4 text-[#07A2FF]'>
+              Services
+            </h3>
             <ul className='space-y-2'>
               {[
                 'Social Media Marketing',
@@ -117,7 +121,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className='font-semibold text-lg mb-4'>Contact Us</h3>
+            <h3 className='font-semibold text-lg mb-4 text-[#07A2FF]'>
+              Contact Us
+            </h3>
             <address className='not-italic text-muted-foreground space-y-2'>
               <p>Road: 12, Sector: 10</p>
               <p>Uttara, Dhaka-1230</p>

@@ -78,7 +78,7 @@ export function Testimonials() {
     <section id='testimonials' className='py-20 bg-muted/50'>
       <div className='container px-4 md:px-6 mx-auto'>
         <motion.div className='text-center mb-12' {...fadeIn()}>
-          <h2 className='text-3xl md:text-4xl font-bold mb-4'>
+          <h2 className='text-3xl md:text-4xl font-bold mb-4 text-[#07A2FF]'>
             {t('testimonials.title')}
           </h2>
           <p className='text-lg text-muted-foreground max-w-3xl mx-auto'>

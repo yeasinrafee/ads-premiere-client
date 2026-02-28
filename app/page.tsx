@@ -11,6 +11,7 @@ import { Portfolio } from '@/components/sections/Portfolio';
 import { Testimonials } from '@/components/sections/Testimonials';
 import { Contact } from '@/components/sections/Contact';
 import { Footer } from '@/components/sections/Footer';
+import { Pricing } from '@/components/sections/Pricing';
 
 export default function Home() {
   return (
@@ -20,8 +21,9 @@ export default function Home() {
       <Services />
       <Features />
       <Process />
+      <Pricing />
       <Stats />
-      <Leadership />
+      {/* <Leadership /> */}
       <Portfolio />
       <Testimonials />
       <Contact />

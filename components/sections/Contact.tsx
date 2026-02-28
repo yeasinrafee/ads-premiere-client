@@ -58,7 +58,7 @@ export function Contact() {
     <section id='contact' className='py-20 overflow-hidden'>
       <div className='container px-4 md:px-6 mx-auto'>
         <motion.div className='text-center mb-12' {...fadeIn()}>
-          <h2 className='text-3xl md:text-4xl font-bold mb-4'>
+          <h2 className='text-3xl md:text-4xl font-bold mb-4 text-[#07A2FF]'>
             {t('contact.title')}
           </h2>
           <p className='text-lg text-muted-foreground max-w-3xl mx-auto'>
@@ -69,7 +69,9 @@ export function Contact() {
         <div className='grid gap-10 md:grid-cols-2 items-stretch'>
           <motion.div className='h-full' {...fadeIn(0.1)}>
             <div className='h-full rounded-xl bg-gradient-to-r from-[#FB9618]/10 to-[#07A2FF]/10 p-6 md:p-8'>
-              <h3 className='text-2xl font-semibold mb-6'>Get in Touch</h3>
+              <h3 className='text-2xl font-semibold mb-6 text-[#07A2FF]'>
+                Get in Touch
+              </h3>
 
               <div className='space-y-6'>
                 {contactInfo.map((item, index) => (
@@ -81,7 +83,7 @@ export function Contact() {
               </div>
 
               <div className='mt-8 space-y-2'>
-                <h4 className='font-medium'>Connect With Us</h4>
+                <h4 className='font-medium text-[#07A2FF]'>Connect With Us</h4>
                 <div className='flex space-x-4'>
                   {[
                     {

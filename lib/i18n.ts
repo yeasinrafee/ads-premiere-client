@@ -6,6 +6,7 @@ type TranslationKey =
   | 'nav.home'
   | 'nav.services'
   | 'nav.process'
+  | 'nav.pricing'
   | 'nav.portfolio'
   | 'nav.testimonials'
   | 'nav.contact'
@@ -69,6 +70,7 @@ const translations: Record<Language, Record<TranslationKey, string>> = {
     'nav.home': 'Home',
     'nav.services': 'Services',
     'nav.process': 'Process',
+    'nav.pricing': 'Pricing',
     'nav.portfolio': 'Portfolio',
     'nav.testimonials': 'Testimonials',
     'nav.contact': 'Contact',
@@ -151,6 +153,7 @@ const translations: Record<Language, Record<TranslationKey, string>> = {
     'nav.home': 'হোম',
     'nav.services': 'সেবাসমূহ',
     'nav.process': 'প্রক্রিয়া',
+    'nav.pricing': 'প্রাইসিং',
     'nav.portfolio': 'পোর্টফোলিও',
     'nav.testimonials': 'প্রশংসাপত্র',
     'nav.contact': 'যোগাযোগ',

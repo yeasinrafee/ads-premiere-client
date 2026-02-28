@@ -63,7 +63,7 @@ function SocialMediaContent() {
       <section className='container px-4 mx-auto'>
         {/* FIXED: Passing 0.1 (number) instead of a string */}
         <motion.div className='text-center mb-16' {...fadeIn(0.1)}>
-          <h2 className='text-3xl md:text-5xl font-bold mb-6'>
+          <h2 className='text-3xl md:text-4xl font-bold mb-6'>
             Our <span className='text-[#07A2FF]'>Strategic</span> Approach
           </h2>
           <p className='text-muted-foreground max-w-2xl mx-auto text-lg'>

@@ -50,7 +50,7 @@ function EmailMarketingContent() {
       {/* --- Section 1: The Strategic Pillars --- */}
       <section className='container px-4 mx-auto'>
         <motion.div className='text-center mb-16' {...fadeIn(0.1)}>
-          <h2 className='text-3xl md:text-5xl font-bold mb-6'>
+          <h2 className='text-3xl md:text-4xl font-bold mb-6'>
             The Highest <span className='text-[#FB9618]'>ROI</span> Channel
           </h2>
           <p className='text-muted-foreground max-w-2xl mx-auto text-lg'>

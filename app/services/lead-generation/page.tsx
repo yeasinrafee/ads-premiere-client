@@ -14,6 +14,7 @@ import {
   ArrowRight,
 } from 'lucide-react';
 import { fadeIn, cardHoverAnimation } from '@/lib/animations';
+import Link from 'next/link';
 
 function LeadGenerationContent() {
   const process = [
@@ -189,8 +190,13 @@ function LeadGenerationContent() {
                 profitable opportunities.
               </p>
               <div className='mt-8 pt-8 border-t border-dashed flex justify-center'>
-                <div className='flex items-center gap-2 text-[#FB9618] font-bold group-hover:gap-4 transition-all cursor-pointer'>
-                  Book A Demo <ArrowRight className='h-5 w-5' />
+                <div className='group cursor-pointer'>
+                  <Link
+                    href='/#contact'
+                    className='flex items-center gap-2 text-[#FB9618] font-bold group-hover:gap-4 transition-all'
+                  >
+                    Book A Demo <ArrowRight className='h-5 w-5' />
+                  </Link>
                 </div>
               </div>
             </div>

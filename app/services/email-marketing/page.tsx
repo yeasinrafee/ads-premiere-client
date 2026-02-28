@@ -164,7 +164,9 @@ function EmailMarketingContent() {
                   <div className='bg-[#07A2FF]/10 p-2 rounded-full group-hover:bg-[#07A2FF] transition-colors'>
                     <CheckCircle2 className='h-5 w-5 text-[#07A2FF] group-hover:text-white' />
                   </div>
-                  <span className='text-lg font-medium'>{item}</span>
+                  <span className='text-lg font-medium text-muted-foreground'>
+                    {item}
+                  </span>
                 </div>
               ))}
             </div>

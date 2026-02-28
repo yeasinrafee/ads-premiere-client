@@ -28,7 +28,7 @@ export function Footer() {
             <div className='mb-3'>
               <Image src={logo} alt='logo' height={60} />
             </div>
-            <Link href='#home' className='flex items-center space-x-2 mb-4'>
+            <Link href='/#home' className='flex items-center space-x-2 mb-4'>
               {/* <div className='font-bold text-2xl'>
                 <span className='text-[#FB9618]'>ADS </span>
                 <span className='text-[#07A2FF]'>PREMIERE</span>
@@ -150,7 +150,7 @@ export function Footer() {
               Contact Us
             </h3>
             <address className='not-italic text-muted-foreground space-y-2'>
-              <p>Road: 12, Sector: 10</p>
+              <p>House: 06, Road: 03, Sector: 09</p>
               <p>Uttara, Dhaka-1230</p>
               <p>Bangladesh</p>
               <p className='mt-4'>adspremiere0@gmail.com</p>

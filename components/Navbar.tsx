@@ -17,7 +17,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   const navItems = [
-    { href: '#home', name: t('nav.home') },
+    { href: '/#home', name: t('nav.home') },
     { href: '/#services', name: t('nav.services') },
     // { href: '/#process', name: t('nav.process') },
     { href: '/#pricing', name: t('nav.pricing') },

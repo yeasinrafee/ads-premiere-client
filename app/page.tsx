@@ -6,11 +6,11 @@ import { Features } from '@/components/sections/Features';
 import { Services } from '@/components/sections/Services';
 import { Process } from '@/components/sections/Process';
 import { Stats } from '@/components/sections/Stats';
-import { Leadership } from '@/components/sections/Leadership';
+// import { Leadership } from '@/components/sections/Leadership';
 import { Portfolio } from '@/components/sections/Portfolio';
 import { Testimonials } from '@/components/sections/Testimonials';
 import { Contact } from '@/components/sections/Contact';
-import { Footer } from '@/components/sections/Footer';
+// import { Footer } from '@/components/sections/Footer';
 import { Pricing } from '@/components/sections/Pricing';
 
 export default function Home() {

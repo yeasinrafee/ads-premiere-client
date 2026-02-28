@@ -38,7 +38,7 @@ export function Features() {
       icon: <Lightbulb className='h-8 w-8' />,
       title: 'Creative Solutions',
       description:
-        'Stand out with innovative and creative marketing strategies.',
+        'Stand out and scale fast with innovative and creative marketing strategies.',
     },
     {
       icon: <Users className='h-8 w-8' />,

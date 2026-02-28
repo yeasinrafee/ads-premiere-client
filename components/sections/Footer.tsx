@@ -79,8 +79,9 @@ export function Footer() {
                 { name: t('nav.home'), href: '#home' },
                 { name: t('nav.services'), href: '#services' },
                 { name: t('nav.process'), href: '#process' },
+                { name: t('nav.pricing'), href: '#pricing' },
                 { name: t('nav.portfolio'), href: '#portfolio' },
-                { name: t('nav.testimonials'), href: '#testimonials' },
+                // { name: t('nav.testimonials'), href: '#testimonials' },
                 { name: t('nav.contact'), href: '#contact' },
               ].map((item) => (
                 <li key={item.href}>
@@ -101,19 +102,43 @@ export function Footer() {
             </h3>
             <ul className='space-y-2'>
               {[
-                'Social Media Marketing',
-                'Email Marketing',
-                'Lead Generation',
-                'Search Engine Optimization',
-                'Content Marketing',
-                'PPC Advertising',
+                {
+                  id: '1',
+                  name: 'Social Media Marketing',
+                  url: '/services/social-media-marketing',
+                },
+                {
+                  id: '2',
+                  name: 'Email Marketing',
+                  url: '/services/email-marketing',
+                },
+                {
+                  id: '3',
+                  name: 'Lead Generation',
+                  url: '/services/lead-generation',
+                },
+                {
+                  id: '4',
+                  name: 'Google Marketing',
+                  url: '/services/google-marketing',
+                },
+                {
+                  id: '5',
+                  name: 'Search Engine Optimization',
+                  url: '/services/seo',
+                },
+                {
+                  id: '6',
+                  name: 'Content Marketing',
+                  url: '/services/content-marketing',
+                },
               ].map((service, i) => (
                 <li key={i}>
                   <Link
-                    href='#services'
+                    href={service.url}
                     className='text-muted-foreground hover:text-foreground transition-colors'
                   >
-                    {service}
+                    {service.name}
                   </Link>
                 </li>
               ))}

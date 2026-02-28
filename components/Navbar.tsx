@@ -18,12 +18,12 @@ export function Navbar() {
 
   const navItems = [
     { href: '#home', name: t('nav.home') },
-    { href: '#services', name: t('nav.services') },
-    // { href: '#process', name: t('nav.process') },
-    { href: '#pricing', name: t('nav.pricing') },
-    { href: '#portfolio', name: t('nav.portfolio') },
-    // { href: '#testimonials', name: t('nav.testimonials') },
-    { href: '#contact', name: t('nav.contact') },
+    { href: '/#services', name: t('nav.services') },
+    // { href: '/#process', name: t('nav.process') },
+    { href: '/#pricing', name: t('nav.pricing') },
+    { href: '/#portfolio', name: t('nav.portfolio') },
+    // { href: '/#testimonials', name: t('nav.testimonials') },
+    { href: '/#contact', name: t('nav.contact') },
   ];
 
   useEffect(() => {
@@ -52,7 +52,7 @@ export function Navbar() {
       )}
     >
       <div className='max-w-7xl mx-auto flex items-center justify-between'>
-        <Link href='#home' className='flex items-center space-x-2'>
+        <Link href='/' className='flex items-center space-x-2'>
           <div>
             <Image src={logo} alt='logo' height={60} />
           </div>

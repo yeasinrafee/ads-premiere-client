@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/providers/ThemeProvider';
 import { LanguageProvider } from '@/providers/LanguageProvider';
 import { Navbar } from '@/components/Navbar';
 import SocialSidebar from '@/components/ui/SocialSidebar';
+import { Footer } from '@/components/sections/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <LanguageProvider>
             <Navbar />
             {children}
+            <Footer />
             <SocialSidebar />
           </LanguageProvider>
         </ThemeProvider>

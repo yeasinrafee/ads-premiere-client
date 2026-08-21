@@ -87,7 +87,7 @@ function PricingCard({
       <Button
         className={`w-full mt-8 ${isPopular ? 'bg-[#FB9618] hover:bg-[#FB9618]/90' : 'bg-[#07A2FF] hover:bg-[#07A2FF]/90'}`}
       >
-        Choose {title}
+        <a href='#contact'>Choose {title}</a>
       </Button>
     </motion.div>
   );

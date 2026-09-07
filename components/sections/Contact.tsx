@@ -12,6 +12,8 @@ import {
   FaWhatsapp,
 } from 'react-icons/fa';
 
+import { toast } from 'sonner';
+
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
@@ -27,16 +29,44 @@ import Link from 'next/link';
 export function Contact() {
   const { t } = useLanguage();
   const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    service: '',
+    message: '',
+  });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    setFormData((prev) => ({ ...prev, [e.target.id]: e.target.value }));
+  };
+
+  const handleServiceChange = (value: string) => {
+    setFormData((prev) => ({ ...prev, service: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error('Failed to send');
+
+      toast.success("Message sent successfully! We'll get back to you soon.");
+      setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+    } catch (err) {
+      toast.error('Something went wrong. Please try again.');
+    } finally {
       setLoading(false);
-      alert("Form submitted successfully! We'll get back to you soon.");
-    }, 1500);
+    }
   };
 
   const contactInfo = [
@@ -125,7 +155,13 @@ export function Contact() {
                     <label htmlFor='name' className='text-sm font-medium'>
                       {t('contact.formName')}
                     </label>
-                    <Input id='name' placeholder='Your Name' required />
+                    <Input
+                      id='name'
+                      placeholder='Your Name'
+                      required
+                      value={formData.name}
+                      onChange={handleChange}
+                    />
                   </div>
                   <div className='space-y-2'>
                     <label htmlFor='email' className='text-sm font-medium'>
@@ -136,6 +172,8 @@ export function Contact() {
                       type='email'
                       placeholder='youremail@example.com'
                       required
+                      value={formData.email}
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -148,6 +186,8 @@ export function Contact() {
                     id='phone'
                     type='tel'
                     placeholder='+1 (123) 456-7890'
+                    value={formData.phone}
+                    onChange={handleChange}
                   />
                 </div>
 
@@ -155,7 +195,10 @@ export function Contact() {
                   <label htmlFor='service' className='text-sm font-medium'>
                     {t('contact.formService')}
                   </label>
-                  <Select>
+                  <Select
+                    value={formData.service}
+                    onValueChange={handleServiceChange}
+                  >
                     <SelectTrigger id='service'>
                       <SelectValue placeholder='Select a service' />
                     </SelectTrigger>
@@ -180,28 +223,30 @@ export function Contact() {
                     placeholder='How can we help you?'
                     rows={4}
                     required
+                    value={formData.message}
+                    onChange={handleChange}
                   />
                 </div>
 
                 <Button
                   type='submit'
-                  className='w-full bg-gradient-to-r from-[#FB9618]  to-[#07A2FF] hover:opacity-90'
+                  className='w-full bg-gradient-to-r from-[#FB9618] to-[#07A2FF] hover:opacity-90'
                   disabled={loading}
                 >
                   {loading ? (
                     <span className='flex items-center'>
                       <svg
-                        className='animate-spin -ml-1 mr-2 h-4 w-4 text-white\'
-                        xmlns='http://www.w3.org/2000/svg\'
-                        fill='none\'
+                        className='animate-spin -ml-1 mr-2 h-4 w-4 text-white'
+                        xmlns='http://www.w3.org/2000/svg'
+                        fill='none'
                         viewBox='0 0 24 24'
                       >
                         <circle
-                          className='opacity-25\'
-                          cx='12\'
-                          cy='12\'
-                          r='10\'
-                          stroke='currentColor\'
+                          className='opacity-25'
+                          cx='12'
+                          cy='12'
+                          r='10'
+                          stroke='currentColor'
                           strokeWidth='4'
                         ></circle>
                         <path
